@@ -38,10 +38,10 @@ if($_POST['formulario'] == 'index'){
         if (!empty($_POST["user_name"]) and !empty($_POST["password"])) {
 
             $con = mysqli_connect(
-                "localhost",
-                "root",
-                "",
-                "gestor_empleados"
+                "us-cdbr-east-04.cleardb.com",
+                "be638dfe02bc87",
+                "18c8a290",
+                "heroku_f7036baf347b6a5"
             ) or die("No se conecto.");
 
             $resultado_sql = mysqli_query(

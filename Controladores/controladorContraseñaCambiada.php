@@ -20,10 +20,10 @@ if ($_POST['formulario'] == 'cambio') {
         
     }}else{
         $con = mysqli_connect(
-            "localhost",
-                "root",
-                "",
-                "gestor_empleados"
+            "us-cdbr-east-04.cleardb.com",
+                "be638dfe02bc87",
+                "18c8a290",
+                "heroku_f7036baf347b6a5"
            )or die(" no se conecto.");
             
            $consulta= "UPDATE login_user SET pass ='$pass' WHERE email='$email'";
